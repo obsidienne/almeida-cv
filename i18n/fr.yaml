@@ -1,2 +1,8 @@
 - id: skills
   translation: Compétences
+- id: diplomas
+  translation: Diplômes
+- id: education
+  translation: Formation
+- id: interests
+  translation: Centres d'intérêts
