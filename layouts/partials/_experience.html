@@ -23,7 +23,7 @@
                     </div>
                     <ul>
                         {{ range .Details }}
-                        <li class="experience__bullet">{{ . }}</li>
+                        <li class="experience__bullet">{{ . | safeHTML }}</li>
                         {{ end }}
                     </ul>
                     <div class="experience__badges">
