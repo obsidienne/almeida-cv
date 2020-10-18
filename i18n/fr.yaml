@@ -6,3 +6,11 @@
   translation: Formation
 - id: interests
   translation: Centres d'intérêts
+- id: languages
+  translation: Langues
+- id: experience
+  translation: Experience
+- id: profil
+  translation: Profil
+- id: translations
+  translation: Traductions

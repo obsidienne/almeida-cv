@@ -28,5 +28,25 @@
         height: 100%;
         padding: 2rem 3rem;
         right: 0;
+
+        @media print {
+            .traduction {
+                display: none;
+            }
+        }
+
+        @media screen {
+            .traduction {
+                height: 4rem;
+                width: 100%;
+                position: absolute;
+                bottom: 0.5rem;
+                color: darken($color-white, 70%);
+
+                & li {
+                    list-style: none;
+                }
+            }
+        }
     }
 }

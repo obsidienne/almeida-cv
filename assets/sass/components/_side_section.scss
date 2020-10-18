@@ -15,7 +15,7 @@
 
         &::after,
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             border-top: 1px solid $color-secondary;
             border-bottom: 1px solid $color-secondary;

@@ -1,4 +1,6 @@
-{{ if .Site.Data.content.Skills }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.content.Skills }}
 <div class="sideSection">
     <div class="sideSection__heading">
         <h2 class="sideSection__title">{{ i18n "skills" }}</h2>
@@ -6,7 +8,7 @@
     <div class="sideSection__content">
         <ul class="skills">
             <li>
-                {{ range .Site.Data.content.Skills }}
+                {{ range $data.content.Skills }}
                 <ul class="skills__group">
                     <span>{{ .Family | safeHTML }}</span>
                     {{ range .Items }}

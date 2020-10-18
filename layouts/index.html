@@ -1,10 +1,14 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
 <!DOCTYPE html>
-<html lang="en">
-    {{ partial "head.html" . }}
+<html lang="{{ .Site.Language.Lang }}">
+{{ partial "head.html" . }}
+
 <body>
     <div class="content">
         <div class="content__left">
-            <h1 class="mainHeading">{{.Site.Data.content.BasicInfo.FirstName}} <span>{{.Site.Data.content.BasicInfo.LastName}}</span></h1>
+            <h1 class="mainHeading">{{$data.content.BasicInfo.FirstName}}
+                <span>{{$data.content.BasicInfo.LastName}}</span></h1>
 
             {{ partial "_profile.html" . }}
             {{ partial "_experience.html" . }}
@@ -19,7 +23,9 @@
             {{ partial "_languages.html" . }}
             {{ partial "_diplomas.html" . }}
             {{ partial "_interests.html" . }}
+            {{ partial "_translations.html" . }}
         </div>
     </div>
 </body>
+
 </html>
